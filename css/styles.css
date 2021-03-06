@@ -1,0 +1,144 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Commissioner", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background: url(../../images/image-hero-mobile.jpg) no-repeat;
+  background-size: cover;
+  height: 300px;
+  padding-top: 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background: url(../../images/image-hero-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 400px;
+    padding-top: 4.8rem;
+  }
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  width: 88%;
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.nav__item {
+  padding: 0 1.6rem;
+}
+
+.nav__item:last-of-type {
+  padding-right: 0;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.nav__toggler {
+  width: 16px;
+  height: 15px;
+  background: url(../../images/icon-hamburger.svg);
+  background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__toggler {
+    display: none;
+  }
+}
+
+.nav.expanded {
+  position: relative;
+}
+
+.nav.expanded .nav__list {
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 62px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.nav.expanded .nav__item {
+  padding: 2.4rem;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.1);
+}
+
+.nav.expanded .nav__item:last-of-type {
+  border-bottom: none;
+}
+
+.nav.expanded .nav__item a {
+  color: #000;
+  font-size: 1.8rem;
+}
+
+.nav.expanded .nav__toggler {
+  background: url(../../images/icon-close-menu.svg) no-repeat center/cover;
+}
+/*# sourceMappingURL=styles.css.map */
