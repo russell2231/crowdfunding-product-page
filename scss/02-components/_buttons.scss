@@ -1,0 +1,16 @@
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+.btn {
+	border-radius: 33.5px;
+	border: none;
+	padding: 1.8rem 4.2rem;
+}
+
+.btn--primary {
+	background: #3cb3ab;
+	color: #fff;
+	font-weight: 700;
+}
