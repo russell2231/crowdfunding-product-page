@@ -20,7 +20,12 @@ h1 {
 
 h2 {
 	margin-top: 0;
-	font-size: 3.2rem;
+	font-size: 1.8rem;
+	margin-bottom: 2.4rem;
+
+	@include tablet {
+		font-size: 2rem;
+	}
 }
 
 .intro__tagline {
@@ -34,7 +39,39 @@ h2 {
 	}
 }
 
+.stat__title {
+	font-size: 3.2rem;
+	font-weight: 700;
+}
+
 .stat__tagline {
 	font-size: 1.4rem;
 	color: #7a7a7a;
+}
+
+.about__tagline {
+	font-size: 1.4rem;
+	color: #7a7a7a;
+	line-height: 1.7;
+
+	@include tablet {
+		font-size: 1.6rem;
+	}
+}
+
+.product__title {
+	font-size: 1.4rem;
+
+	@include tablet {
+		font-size: 1.8rem;
+	}
+}
+
+.product__badge {
+	font-size: 1.4rem;
+	color: #3cb3ab;
+
+	@include tablet {
+		font-size: 1.5rem;
+	}
 }
