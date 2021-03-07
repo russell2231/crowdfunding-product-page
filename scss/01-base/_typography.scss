@@ -18,6 +18,11 @@ h1 {
 	}
 }
 
+h2 {
+	margin-top: 0;
+	font-size: 3.2rem;
+}
+
 .intro__tagline {
 	font-size: 1.4rem;
 	text-align: center;
@@ -27,4 +32,9 @@ h1 {
 	@include desktop {
 		font-size: 1.6rem;
 	}
+}
+
+.stat__tagline {
+	font-size: 1.4rem;
+	color: #7a7a7a;
 }
