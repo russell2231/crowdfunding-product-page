@@ -130,13 +130,24 @@ header {
   display: none;
 }
 
-.overlay.active {
+.overlay.active,
+.overlay.navigation {
   display: block;
   position: fixed;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
+}
+
+.overlay.active {
+  background: #000;
+  opacity: 0.5;
+}
+
+.overlay.navigation {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(#000, rgba(255, 255, 255, 0));
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 1024px) {
@@ -492,6 +503,7 @@ button {
 }
 
 .nav__item a {
+  display: block;
   text-decoration: none;
   color: #fff;
   font-size: 1.3rem;
@@ -519,13 +531,14 @@ button {
   display: block;
   background: #fff;
   position: absolute;
+  z-index: 5;
   top: 62px;
   width: 100%;
   border-radius: 8px;
 }
 
 .nav.expanded .nav__item {
-  padding: 2.4rem;
+  padding: 0;
   border-bottom: 1px solid rgba(47, 47, 47, 0.1);
 }
 
@@ -534,12 +547,18 @@ button {
 }
 
 .nav.expanded .nav__item a {
+  padding: 2.4rem;
   color: #000;
   font-size: 1.8rem;
 }
 
+.nav.expanded .nav__brand {
+  z-index: 5;
+}
+
 .nav.expanded .nav__toggler {
   background: url(../../images/icon-close-menu.svg) no-repeat center/cover;
+  z-index: 5;
 }
 
 .intro {

@@ -23,6 +23,7 @@
 		}
 
 		a {
+			display: block;
 			text-decoration: none;
 			color: #fff;
 			font-size: 1.3rem;
@@ -51,13 +52,14 @@
 		display: block;
 		background: #fff;
 		position: absolute;
+		z-index: 5;
 		top: 62px;
 		width: 100%;
 		border-radius: 8px;
 	}
 
 	.nav__item {
-		padding: 2.4rem;
+		padding: 0;
 		border-bottom: 1px solid rgba($color: #2f2f2f, $alpha: 0.1);
 
 		&:last-of-type {
@@ -65,12 +67,18 @@
 		}
 
 		a {
+			padding: 2.4rem;
 			color: #000;
 			font-size: 1.8rem;
 		}
 	}
 
+	.nav__brand {
+		z-index: 5;
+	}
+
 	.nav__toggler {
 		background: url(../../images/icon-close-menu.svg) no-repeat center/cover;
+		z-index: 5;
 	}
 }
