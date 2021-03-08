@@ -374,6 +374,85 @@ button {
   padding-left: 0.8rem;
 }
 
+.product.modal.selected {
+  border: 2px solid #3cb3ab;
+}
+
+.product.modal.selected .product__radio {
+  background: #3cb3ab;
+}
+
+.product.modal.selected .product__pledge {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  margin: 2.4rem -2.4rem 0;
+  padding: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .product.modal.selected .product__pledge {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0;
+  }
+}
+
+.product.modal.selected .product__pledge .pledge__tagline {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #7a7a7a;
+}
+
+@media screen and (min-width: 768px) {
+  .product.modal.selected .product__pledge .pledge__tagline {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+}
+
+.product.modal.selected .product__pledge .pledge__confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.product.modal.selected .product__pledge .pledge__confirm input[type='number'] {
+  width: 100px;
+  border-radius: 33.5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 1.6rem 1.6rem 1.6rem 4.2rem;
+  font-weight: 700;
+  caret-color: #3cb3ab;
+  outline: none;
+  margin-right: 1.6rem;
+}
+
+.product.modal.selected .product__pledge .pledge__confirm input[type='number']::-webkit-inner-spin-button, .product.modal.selected .product__pledge .pledge__confirm input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.product.modal.selected .product__pledge .pledge__confirm .pledge__icon {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  color: #7a7a7a;
+}
+
+.product.modal.selected .product__pledge .pledge__confirm .btn {
+  width: 115px;
+  padding: 1.6rem 2.4rem;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -159,3 +159,70 @@
 		}
 	}
 }
+
+.product.modal.selected {
+	border: 2px solid #3cb3ab;
+
+	.product__radio {
+		background: #3cb3ab;
+	}
+
+	.product__pledge {
+		border-top: 1px solid rgba($color: #000000, $alpha: 0.15);
+		margin: 2.4rem -2.4rem 0;
+		padding: 2.4rem;
+
+		@include tablet {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-bottom: 0;
+		}
+
+		.pledge__tagline {
+			text-align: center;
+			margin-top: 0;
+			font-size: 1.4rem;
+			color: #7a7a7a;
+
+			@include tablet {
+				margin-bottom: 0;
+				font-size: 1.6rem;
+			}
+		}
+
+		.pledge__confirm {
+			display: flex;
+			position: relative;
+
+			input[type='number'] {
+				width: 100px;
+				border-radius: 33.5px;
+				border: 1px solid rgba($color: #000000, $alpha: 0.15);
+				padding: 1.6rem 1.6rem 1.6rem 4.2rem;
+				font-weight: 700;
+				caret-color: #3cb3ab;
+				outline: none;
+				margin-right: 1.6rem;
+
+				&::-webkit-inner-spin-button,
+				&::-webkit-outer-spin-button {
+					appearance: none;
+					margin: 0;
+				}
+			}
+
+			.pledge__icon {
+				position: absolute;
+				top: 16px;
+				left: 24px;
+				color: #7a7a7a;
+			}
+
+			.btn {
+				width: 115px;
+				padding: 1.6rem 2.4rem;
+			}
+		}
+	}
+}
