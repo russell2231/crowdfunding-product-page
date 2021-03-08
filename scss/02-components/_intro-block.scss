@@ -13,6 +13,10 @@
 		padding: 5.2rem 4.8rem 4rem;
 	}
 
+	@include desktop {
+		margin-top: -100px;
+	}
+
 	&__logo {
 		position: absolute;
 		top: -28px;

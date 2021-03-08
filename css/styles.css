@@ -136,6 +136,7 @@ header {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 @media screen and (min-width: 1024px) {
@@ -567,6 +568,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .intro {
+    margin-top: -100px;
+  }
+}
+
 .intro__logo {
   position: absolute;
   top: -28px;
@@ -781,6 +788,7 @@ button {
   border-radius: 8px;
   position: absolute;
   top: 121px;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
@@ -833,5 +841,61 @@ button {
 
 .backing-modal.open {
   display: block;
+}
+
+.backing-modal.thanks {
+  text-align: center;
+  top: 143px;
+}
+
+@media screen and (min-width: 768px) {
+  .backing-modal.thanks {
+    max-width: 540px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .backing-modal.thanks {
+    top: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backing-modal.thanks .thanks__icon {
+    width: 90px;
+  }
+}
+
+.backing-modal.thanks .thanks__title {
+  font-size: 1.8rem;
+  margin: 2.4rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .backing-modal.thanks .thanks__title {
+    font-size: 2.4rem;
+  }
+}
+
+.backing-modal.thanks .thanks__tagline {
+  color: #7a7a7a;
+  line-height: 1.7;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 3.1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .backing-modal.thanks .thanks__tagline {
+    font-size: 1.6rem;
+  }
+}
+
+.backing-modal.thanks .btn {
+  font-size: 1.4rem;
+  padding: 1.6rem 3.3rem;
 }
 /*# sourceMappingURL=styles.css.map */
