@@ -386,7 +386,7 @@ button {
 .product.modal.selected .product__pledge {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   margin: 2.4rem -2.4rem 0;
-  padding: 2.4rem;
+  padding: 2.4rem 2.4rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -400,7 +400,6 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 0;
   }
 }
 
@@ -839,48 +838,55 @@ button {
   }
 }
 
-.backing-modal.open {
+.backing-modal.active {
   display: block;
 }
 
-.backing-modal.thanks {
+.success-modal {
+  display: none;
+  position: absolute;
+  background: #fff;
+  border-radius: 8px;
+  z-index: 3;
+  padding: 3.2rem 2.4rem 4rem;
   text-align: center;
   top: 143px;
 }
 
 @media screen and (min-width: 768px) {
-  .backing-modal.thanks {
+  .success-modal {
     max-width: 540px;
     left: 50%;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
+    padding: 4.8rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .backing-modal.thanks {
+  .success-modal {
     top: 460px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .backing-modal.thanks .thanks__icon {
+  .success-modal .thanks__icon {
     width: 90px;
   }
 }
 
-.backing-modal.thanks .thanks__title {
+.success-modal .thanks__title {
   font-size: 1.8rem;
   margin: 2.4rem 0;
 }
 
 @media screen and (min-width: 768px) {
-  .backing-modal.thanks .thanks__title {
+  .success-modal .thanks__title {
     font-size: 2.4rem;
   }
 }
 
-.backing-modal.thanks .thanks__tagline {
+.success-modal .thanks__tagline {
   color: #7a7a7a;
   line-height: 1.7;
   font-size: 1.4rem;
@@ -889,13 +895,17 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .backing-modal.thanks .thanks__tagline {
+  .success-modal .thanks__tagline {
     font-size: 1.6rem;
   }
 }
 
-.backing-modal.thanks .btn {
+.success-modal .btn {
   font-size: 1.4rem;
   padding: 1.6rem 3.3rem;
+}
+
+.success-modal.active {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */

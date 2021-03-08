@@ -42,53 +42,6 @@
 	}
 }
 
-.backing-modal.open {
+.backing-modal.active {
 	display: block;
-}
-
-.backing-modal.thanks {
-	text-align: center;
-	top: 143px;
-
-	@include tablet {
-		max-width: 540px;
-		left: 50%;
-		transform: translate(-50%);
-	}
-
-	@include desktop {
-		top: 460px;
-	}
-
-	.thanks__icon {
-		@include tablet {
-			width: 90px;
-		}
-	}
-
-	.thanks__title {
-		font-size: 1.8rem;
-		margin: 2.4rem 0;
-
-		@include tablet {
-			font-size: 2.4rem;
-		}
-	}
-
-	.thanks__tagline {
-		color: #7a7a7a;
-		line-height: 1.7;
-		font-size: 1.4rem;
-		margin-top: 0;
-		margin-bottom: 3.1rem;
-
-		@include tablet {
-			font-size: 1.6rem;
-		}
-	}
-
-	.btn {
-		font-size: 1.4rem;
-		padding: 1.6rem 3.3rem;
-	}
 }
