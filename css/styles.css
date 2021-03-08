@@ -196,11 +196,22 @@ button {
 }
 
 .product__title {
-  margin: 0 0 0.8rem;
+  margin: 0;
+}
+
+.product__badge {
+  display: inline-block;
+  margin-top: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .product__badge {
+    margin-top: 0;
+  }
 }
 
 .product__description {
-  margin: 2.4rem 0;
+  margin: 2.4rem 0 0;
   font-size: 1.4rem;
   color: #7a7a7a;
   line-height: 1.7;
@@ -235,7 +246,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 2.4rem;
+  margin: 2.4rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -262,6 +273,105 @@ button {
 
 .product.sold-out .btn {
   background: rgba(47, 47, 47, 0.5);
+}
+
+.product.modal {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .product.modal {
+    padding: 3.6rem 2.8rem 3.2rem;
+  }
+}
+
+.product.modal .product__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .product.modal .product__heading {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.product.modal .product__radio-container {
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .product.modal .product__radio-container {
+    margin-right: 2.4rem;
+  }
+}
+
+.product.modal .product__radio-container .product__radio {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .product.modal .product__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product.modal .product__badge {
+    margin-left: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product.modal .product__description {
+    font-size: 1.5rem;
+    padding-left: 4.8rem;
+  }
+}
+
+.product.modal .product__left {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .product.modal .product__left {
+    margin-top: 0;
+    position: absolute;
+    top: 36px;
+    right: 28px;
+  }
+}
+
+.product.modal .product__left .text-left {
+  padding-left: 0.8rem;
 }
 
 .nav {
@@ -583,5 +693,66 @@ button {
 .about__tagline {
   margin: 0;
   margin-bottom: 3.6rem;
+}
+
+.backing-modal {
+  display: none;
+  background: #fff;
+  padding: 3.2rem 2.4rem;
+  border-radius: 8px;
+  position: absolute;
+  top: 121px;
+}
+
+@media screen and (min-width: 768px) {
+  .backing-modal {
+    padding: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .backing-modal {
+    top: 184px;
+  }
+}
+
+.backing-modal .backing__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.backing-modal .backing__title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .backing-modal .backing__title {
+    font-size: 2.4rem;
+  }
+}
+
+.backing-modal .backing__tagline {
+  margin: 2.4rem 0;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #7a7a7a;
+}
+
+@media screen and (min-width: 768px) {
+  .backing-modal .backing__tagline {
+    font-size: 1.6rem;
+  }
+}
+
+.backing-modal.open {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */
