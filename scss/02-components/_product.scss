@@ -215,6 +215,10 @@
 					appearance: none;
 					margin: 0;
 				}
+
+				&.error {
+					border-color: red;
+				}
 			}
 
 			.pledge__icon {

@@ -458,6 +458,10 @@ button {
   margin: 0;
 }
 
+.product.modal.selected .product__pledge .pledge__confirm input[type='number'].error {
+  border-color: red;
+}
+
 .product.modal.selected .product__pledge .pledge__confirm .pledge__icon {
   position: absolute;
   top: 16px;

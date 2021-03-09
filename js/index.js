@@ -3,6 +3,8 @@ const overlay = document.querySelector('.overlay');
 const getStartedBtn = document.querySelector('.intro__back');
 const productSelectBtns = document.querySelectorAll('.about .btn');
 const backModal = document.querySelector('.backing-modal');
+const pledgeForms = document.querySelectorAll('.product__pledge');
+const successModal = document.querySelector('.success-modal');
 
 function renderBackModal() {
 	overlay.classList.add('active');
@@ -78,5 +80,29 @@ productSelectBtns.forEach((productBtn) => {
 		});
 
 		renderBackModal();
+	});
+});
+
+// Exit Success Modal
+successModal.addEventListener('click', (e) => {
+	if (e.target.classList.contains('btn')) {
+		overlay.classList.remove('active');
+		successModal.classList.remove('active');
+	}
+});
+
+// Pledge Form Submit
+pledgeForms.forEach((form) => {
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+		const input = form.children[1].children[1];
+
+		if (input.value === '') {
+			input.classList.add('error');
+		} else {
+			input.classList.remove('error');
+			backModal.classList.remove('active');
+			successModal.classList.add('active');
+		}
 	});
 });
