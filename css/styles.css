@@ -177,6 +177,12 @@ button {
   background: #3cb3ab;
   color: #fff;
   font-weight: 700;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.btn--primary:hover {
+  background: #147a73;
 }
 
 .product {
@@ -281,6 +287,7 @@ button {
 
 .product.sold-out {
   opacity: 0.4;
+  pointer-events: none;
 }
 
 .product.sold-out .btn {
@@ -296,6 +303,14 @@ button {
   .product.modal {
     padding: 3.6rem 2.8rem 3.2rem;
   }
+}
+
+.product.modal:hover .product__radio-container {
+  border-color: #3cb3ab;
+}
+
+.product.modal:hover .product__title {
+  color: #3cb3ab;
 }
 
 .product.modal .product__heading {
@@ -452,6 +467,10 @@ button {
   margin-right: 1.6rem;
 }
 
+.product.modal.selected .product__pledge .pledge__confirm input[type='number']:focus {
+  border-color: #3cb3ab;
+}
+
 .product.modal.selected .product__pledge .pledge__confirm input[type='number']::-webkit-inner-spin-button, .product.modal.selected .product__pledge .pledge__confirm input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
           appearance: none;
@@ -518,6 +537,11 @@ button {
   color: #fff;
   font-size: 1.3rem;
   font-weight: 500;
+  text-shadow: 1px 1px 0 #7a7a7a;
+}
+
+.nav__item a:hover {
+  text-decoration: underline;
 }
 
 .nav__toggler {
@@ -560,6 +584,7 @@ button {
   padding: 2.4rem;
   color: #000;
   font-size: 1.8rem;
+  text-shadow: none;
 }
 
 .nav.expanded .nav__brand {

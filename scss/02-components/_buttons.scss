@@ -13,4 +13,9 @@ button {
 	background: #3cb3ab;
 	color: #fff;
 	font-weight: 700;
+	transition: background 0.5s;
+
+	&:hover {
+		background: #147a73;
+	}
 }

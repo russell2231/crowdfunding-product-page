@@ -78,6 +78,7 @@
 
 .product.sold-out {
 	opacity: 0.4;
+	pointer-events: none;
 
 	.btn {
 		background: rgba($color: #2f2f2f, $alpha: 0.5);
@@ -91,6 +92,16 @@
 
 	@include tablet {
 		padding: 3.6rem 2.8rem 3.2rem;
+	}
+
+	&:hover {
+		.product__radio-container {
+			border-color: #3cb3ab;
+		}
+
+		.product__title {
+			color: #3cb3ab;
+		}
 	}
 
 	.product__heading {
@@ -209,6 +220,10 @@
 				caret-color: #3cb3ab;
 				outline: none;
 				margin-right: 1.6rem;
+
+				&:focus {
+					border-color: #3cb3ab;
+				}
 
 				&::-webkit-inner-spin-button,
 				&::-webkit-outer-spin-button {
