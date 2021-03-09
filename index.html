@@ -149,7 +149,11 @@
 				<section class="backing-modal container">
 					<div class="backing__heading">
 						<h2 class="backing__title">Back this project</h2>
-						<img src="images/icon-close-modal.svg" alt="" />
+						<img
+							class="backing__exit"
+							src="images/icon-close-modal.svg"
+							alt=""
+						/>
 					</div>
 					<p class="backing__tagline">
 						Want to support us in bringing Mastercraft Bamboo Monitor Riser out
@@ -170,8 +174,16 @@
 							project. As a backer, you will be signed up to receive product
 							updates via email.
 						</p>
+						<form class="product__pledge">
+							<p class="pledge__tagline">Enter your pledge</p>
+							<div class="pledge__confirm">
+								<span class="pledge__icon">$</span>
+								<input type="number" name="" id="" min="1" value="1" />
+								<button type="submit" class="btn btn--primary">Continue</button>
+							</div>
+						</form>
 					</div>
-					<div class="product modal selected">
+					<div class="product modal">
 						<div class="product__heading">
 							<div class="product__radio-container">
 								<div class="product__radio"></div>
@@ -220,6 +232,14 @@
 								64 <span class="left-text">left</span>
 							</span>
 						</div>
+						<form class="product__pledge">
+							<p class="pledge__tagline">Enter your pledge</p>
+							<div class="pledge__confirm">
+								<span class="pledge__icon">$</span>
+								<input type="number" name="" id="" min="75" value="75" />
+								<button type="submit" class="btn btn--primary">Continue</button>
+							</div>
+						</form>
 					</div>
 					<div class="product modal sold-out">
 						<div class="product__heading">
@@ -241,6 +261,14 @@
 								0 <span class="left-text">left</span>
 							</span>
 						</div>
+						<form class="product__pledge">
+							<p class="pledge__tagline">Enter your pledge</p>
+							<div class="pledge__confirm">
+								<span class="pledge__icon">$</span>
+								<input type="number" name="" id="" min="200" value="200" />
+								<button type="submit" class="btn btn--primary">Continue</button>
+							</div>
+						</form>
 					</div>
 				</section>
 				<!-- End of Backing Modal -->
